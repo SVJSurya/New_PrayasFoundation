@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs | Prayas Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c6d0",
+                        "on-surface": "#1a1c1c",
+                        "on-background": "#1a1c1c",
+                        "secondary-container": "#9ebfff",
+                        "on-error": "#ffffff",
+                        "background": "#faf9f9",
+                        "inverse-on-surface": "#f1f0f0",
+                        "on-primary-fixed-variant": "#294871",
+                        "on-tertiary-container": "#b68700",
+                        "on-secondary-fixed-variant": "#21467f",
+                        "primary-fixed": "#d5e3ff",
+                        "surface-container-highest": "#e3e2e2",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#faf9f9",
+                        "primary": "#00132c",
+                        "secondary": "#3c5e98",
+                        "on-surface-variant": "#43474e",
+                        "surface-container-low": "#f4f3f3",
+                        "on-primary-container": "#7390be",
+                        "secondary-fixed-dim": "#abc7ff",
+                        "outline": "#74777f",
+                        "tertiary-container": "#352500",
+                        "surface-tint": "#425f8a",
+                        "tertiary-fixed-dim": "#f8bd2d",
+                        "secondary-fixed": "#d7e2ff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#002850",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-surface": "#2f3131",
+                        "surface-variant": "#e3e2e2",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#faf9f9",
+                        "on-primary-fixed": "#001c3b",
+                        "tertiary-fixed": "#ffdea0",
+                        "tertiary": "#1b1100",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#aac8f9",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#eeeeed",
+                        "surface-dim": "#dadada",
+                        "primary-fixed-dim": "#aac8f9",
+                        "on-secondary-fixed": "#001b3f",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#294c85",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "64px",
+                        "md": "24px",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xs": "8px",
+                        "lg": "40px",
+                        "container-max": "1200px",
+                        "sm": "16px",
+                        "section-gap": "96px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full h-[72px] border-t-4 border-tertiary-fixed-dim bg-surface-container-lowest/95 backdrop-blur-md z-50 shadow-sm">
+<div class="flex justify-between items-center h-full px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Prayas Foundation</div>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="index.html">Home</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="about.html">About Us</a>
+<div class="relative group h-full flex items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="programs.html">Programs</a>
+<!-- Dropdown for anchor linking -->
+<div class="absolute top-[72px] left-0 w-52 bg-surface-container-lowest border border-outline-variant shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+<a class="block px-4 py-2 text-label-md font-label-md text-on-surface hover:bg-surface-container-high transition-colors" href="#govt">Government Projects</a>
+<a class="block px-4 py-2 text-label-md font-label-md text-on-surface hover:bg-surface-container-high transition-colors" href="#csr">CSR Initiatives</a>
+<a class="block px-4 py-2 text-label-md font-label-md text-on-surface hover:bg-surface-container-high transition-colors" href="#skills">Skill Development</a>
+</div>
+</div>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="story.html">Our Story</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="contact.html">Contact Us</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label-lg text-label-lg hover:bg-primary-container transition-colors rounded">Donate Now</button>
+</div>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="bg-primary py-section-gap text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-96 h-96 bg-tertiary-fixed-dim rounded-full blur-3xl -mr-48 -mt-48"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10">
+<h1 class="font-display-lg text-display-lg mb-6">Empowering Progress Through Partnership</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl mx-auto mb-12">We design and implement scalable solutions across the public and private sectors to build resilient communities and a skilled workforce.</p>
+<div class="flex justify-center gap-gutter">
+<a class="font-label-lg text-label-lg bg-tertiary-fixed-dim text-primary px-8 py-3 rounded font-bold hover:bg-tertiary-fixed transition-colors" href="#govt">Explore Public Sector</a>
+<a class="font-label-lg text-label-lg border border-primary-fixed-dim text-primary-fixed-dim px-8 py-3 rounded font-bold hover:bg-primary-fixed-dim hover:text-primary transition-colors" href="#csr">View CSR Works</a>
+</div>
+</div>
+</section>
+<!-- Government Projects Section (#govt) -->
+<section class="py-section-gap bg-surface" id="govt">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-12">
+<span class="text-tertiary-fixed-dim font-label-lg text-label-lg uppercase tracking-widest font-bold">Public Sector Partnership</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Governmental Strategic Initiatives</h2>
+<div class="w-20 h-1 bg-tertiary-fixed-dim mt-4"></div>
+</div>
+<div class="space-y-section-gap">
+<!-- Item 1: Text Left, Image Right -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Nationwide Literacy Integration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">Partnering with national ministries to modernize educational infrastructure. We deploy digital literacy modules that bridge the rural-urban divide, reaching over 2 million students annually. Our approach emphasizes sustainable technology transfer and localized curriculum adaptation.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim font-bold">check_circle</span>
+<span class="font-label-lg text-label-lg text-primary">Digital Infrastructure Deployment</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim font-bold">check_circle</span>
+<span class="font-label-lg text-label-lg text-primary">Public-Private Policy Advisory</span>
+</li>
+</ul>
+</div>
+<div class="aspect-video bg-surface-variant overflow-hidden border border-outline-variant shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A group of diverse university students working together on laptops in a high-tech, sunlit classroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcuLWgeKsGhxgWNPzeRCKa-H_mk3K_p7EDej5EL8sDU4NNLOUsWNPCsGV-bTvPxPRkOToy9U-q-nOqVlVr7rnRZAR9ctndl_UsMTvgqgPKAnnHu279zaAjaKm46cfOSvSAcOq1s1AR-nMNPDWzQbTL6zTGMsLIsl4x_Xmvear7JGAmIzkY6XaroDMSTVAa6gPdlA6QJ3rJxa1A1BCjB_Vp6dKejXiA6qQVbnJIxGC5eScSQ8VuMkbD9Zyu0Ttayk53-wdeKdmM6_OL"/>
+</div>
+</div>
+<!-- Item 2: Image Left, Text Right -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1 aspect-video bg-surface-variant overflow-hidden border border-outline-variant shadow-xl">
+<img class="w-full h-full object-cover" data-alt="An expansive, modern government office building with high ceilings and glass walls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1TsSSNpuf0s6hQrXF7AOMlEhCBKwtbVykPVgAFYJ1wdYwHEw4LPSFKGETu-Nd1f6JeWcc9vUMXHMuXGGFSmJ168a6zaxTRhs3-EAIoZ1UN3M1WvEVcNlyJWuLJSOPmADb1M2lN1QHtKp1iVnyC21BzpXLz0v39NU0Bap9kMCkrDAsAmaC7nZByUoVAdJsEFKbx3qlP90K_tuy-mnZwn6RPCl2PohsDdTPF0xZnYfTEIxi4VbHDnCUWaukWV_raIz4cLFa_XpcMMWX"/>
+</div>
+<div class="order-1 md:order-2">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Urban Resilience &amp; Sustainability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">Our sustainability framework helps municipal governments transition to green energy grids while ensuring job security for traditional sectors. We provide the technical expertise needed to manage large-scale ecological transitions without disrupting essential civic services.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim font-bold">check_circle</span>
+<span class="font-label-lg text-label-lg text-primary">Carbon Neutrality Roadmaps</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim font-bold">check_circle</span>
+<span class="font-label-lg text-label-lg text-primary">Grid Modernization Consultancy</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CSR Initiatives Section (#csr) -->
+<section class="py-section-gap bg-surface-container-low border-y border-outline-variant" id="csr">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-12 text-center">
+<span class="text-tertiary-fixed-dim font-label-lg text-label-lg uppercase tracking-widest font-bold">Corporate Responsibility</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">CSR Strategic Partnerships</h2>
+<p class="font-body-md text-body-md text-secondary mt-4 max-w-xl mx-auto">Connecting corporate ambition with community needs through measurable, high-impact social programs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- CSR Card 1 -->
+<div class="bg-surface-container-lowest p-8 border-b-4 border-tertiary-fixed-dim shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">factory</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3 text-primary">Industrial Upskilling</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Working with manufacturing leaders to retrain their workforce for Industry 4.0 automation and robotics.</p>
+<a class="text-primary font-label-lg text-label-lg flex items-center gap-2 group-hover:gap-3 transition-all font-bold" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- CSR Card 2 -->
+<div class="bg-surface-container-lowest p-8 border-b-4 border-tertiary-fixed-dim shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">health_and_safety</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3 text-primary">Community Wellness</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Designing comprehensive healthcare access programs for underserved industrial clusters and worker zones.</p>
+<a class="text-primary font-label-lg text-label-lg flex items-center gap-2 group-hover:gap-3 transition-all font-bold" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- CSR Card 3 -->
+<div class="bg-surface-container-lowest p-8 border-b-4 border-tertiary-fixed-dim shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">eco</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-3 text-primary">Supply Chain Ethics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Auditing and improving the social and environmental standards across international corporate supply chains.</p>
+<a class="text-primary font-label-lg text-label-lg flex items-center gap-2 group-hover:gap-3 transition-all font-bold" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Skill Development Programs Section (#skills) -->
+<section class="py-section-gap bg-surface" id="skills">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<span class="text-tertiary-fixed-dim font-label-lg text-label-lg uppercase tracking-widest font-bold">Vocational Track</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Professional Skill Development</h2>
+</div>
+<button class="border-2 border-primary text-primary px-6 py-2.5 font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-colors font-bold rounded">Download Brochure</button>
+</div>
+<!-- Minimalist Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Training Program 1 -->
+<div class="md:col-span-2 bg-white border border-outline-variant p-8 flex flex-col justify-between hover:shadow-lg transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary-fixed-dim/5 -mr-12 -mt-12 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+<div>
+<div class="flex justify-between items-start mb-8">
+<span class="px-3 py-1 bg-primary text-on-primary font-label-md text-label-md rounded">Professional Certification</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim">workspace_premium</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Advanced Project Management</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">A rigorous 12-week certification focused on agile methodologies, fiscal management, and institutional leadership. Accredited by global industry bodies.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider">Duration</span>
+<span class="text-body-md font-bold text-primary">3 Months</span>
+</div>
+<button class="text-primary font-bold text-label-lg hover:underline underline-offset-4">Learn More</button>
+</div>
+</div>
+<!-- Training Program 2 -->
+<div class="bg-white border border-outline-variant p-8 flex flex-col hover:shadow-lg transition-shadow group">
+<div class="w-10 h-10 bg-primary/5 flex items-center justify-center rounded mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">code</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-primary">Systems Analysis</h3>
+<p class="font-label-lg text-label-lg text-on-surface-variant flex-grow">Technical vocational track for backend data management and infrastructure analytics.</p>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-label-md font-label-md bg-surface-container-high text-primary px-2 py-1 rounded">Tech Track</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-sm font-bold">open_in_new</span>
+</div>
+</div>
+<!-- Training Program 3 -->
+<div class="bg-white border border-outline-variant p-8 flex flex-col hover:shadow-lg transition-shadow group">
+<div class="w-10 h-10 bg-primary/5 flex items-center justify-center rounded mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">leaderboard</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-primary">Policy Writing</h3>
+<p class="font-label-lg text-label-lg text-on-surface-variant flex-grow">Specialized course for civil servants focusing on legislative drafting and policy research.</p>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-label-md font-label-md bg-surface-container-high text-primary px-2 py-1 rounded">Gov Track</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-sm font-bold">open_in_new</span>
+</div>
+</div>
+<!-- Training Program 4 (Full Width Mobile) -->
+<div class="md:col-span-4 bg-primary p-xl text-on-primary flex flex-col md:flex-row items-center gap-gutter relative overflow-hidden">
+<div class="absolute inset-0 bg-white/5 pointer-events-none" style="mask-image: radial-gradient(circle at 70% 50%, black, transparent 70%);"></div>
+<div class="flex-grow relative z-10">
+<h3 class="font-headline-lg text-headline-lg mb-2">Custom Vocational Tracks</h3>
+<p class="font-body-md text-body-md opacity-80 max-w-3xl">Does your organization require a bespoke training curriculum? We design specialized programs tailored to specific departmental needs with a focus on institutional excellence.</p>
+</div>
+<button class="bg-tertiary-fixed-dim px-8 py-4 font-label-lg text-label-lg text-primary font-bold hover:bg-tertiary-fixed transition-colors whitespace-nowrap rounded relative z-10">Schedule Consultation</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary pt-section-gap pb-12 border-t-8 border-tertiary-fixed-dim">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-margin-desktop max-w-container-max mx-auto text-on-primary">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-tertiary-fixed-dim mb-6">Prayas Foundation</div>
+<p class="text-label-lg font-label-lg text-primary-fixed-dim leading-relaxed">Defining institutional excellence through strategic development and skill empowerment since 2010.</p>
+</div>
+<div>
+<h5 class="text-label-lg font-bold text-tertiary-fixed-dim mb-6 uppercase tracking-wider">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="index.html">Home</a></li>
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="about.html">About Us</a></li>
+<li><a class="text-white font-bold underline underline-offset-4 text-label-lg font-label-lg" href="programs.html">Programs</a></li>
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="story.html">Our Story</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-label-lg font-bold text-tertiary-fixed-dim mb-6 uppercase tracking-wider">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="contact.html">Contact Us</a></li>
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="#">Careers</a></li>
+<li><a class="text-primary-fixed-dim hover:text-white transition-colors text-label-lg font-label-lg" href="#">Partner Portals</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-label-lg font-bold text-tertiary-fixed-dim mb-6 uppercase tracking-wider">Global Office</h5>
+<p class="text-label-lg font-label-lg text-primary-fixed-dim mb-2">1200 Strategy Plaza, Suite 400</p>
+<p class="text-label-lg font-label-lg text-primary-fixed-dim mb-6">Washington, D.C. 20005</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed-dim cursor-pointer hover:text-white transition-colors">public</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim cursor-pointer hover:text-white transition-colors">mail</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim cursor-pointer hover:text-white transition-colors">phone</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-xl pt-gutter border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-md font-label-md text-primary-fixed-dim/60">© 2024 Prayas Foundation. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-label-md font-label-md text-primary-fixed-dim/60 hover:text-white" href="#">Privacy Policy</a>
+<a class="text-label-md font-label-md text-primary-fixed-dim/60 hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'ease-out', 'translate-y-10', 'opacity-0');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>

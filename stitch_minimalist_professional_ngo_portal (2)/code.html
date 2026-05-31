@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | Prayas Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "outline-variant": "#c3c6d0",
+                "on-surface": "#1a1c1c",
+                "on-background": "#1a1c1c",
+                "secondary-container": "#9ebfff",
+                "on-error": "#ffffff",
+                "background": "#faf9f9",
+                "inverse-on-surface": "#f1f0f0",
+                "on-primary-fixed-variant": "#294871",
+                "on-tertiary-container": "#b68700",
+                "on-secondary-fixed-variant": "#21467f",
+                "primary-fixed": "#d5e3ff",
+                "surface-container-highest": "#e3e2e2",
+                "on-error-container": "#93000a",
+                "surface-bright": "#faf9f9",
+                "primary": "#00132c",
+                "secondary": "#3c5e98",
+                "on-surface-variant": "#43474e",
+                "surface-container-low": "#f4f3f3",
+                "on-primary-container": "#7390be",
+                "secondary-fixed-dim": "#abc7ff",
+                "outline": "#74777f",
+                "tertiary-container": "#352500",
+                "surface-tint": "#425f8a",
+                "tertiary-fixed-dim": "#f8bd2d",
+                "secondary-fixed": "#d7e2ff",
+                "on-primary": "#ffffff",
+                "primary-container": "#002850",
+                "on-tertiary-fixed": "#261a00",
+                "surface-container-high": "#e8e8e8",
+                "inverse-surface": "#2f3131",
+                "surface-variant": "#e3e2e2",
+                "on-tertiary-fixed-variant": "#5c4300",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#faf9f9",
+                "on-primary-fixed": "#001c3b",
+                "tertiary-fixed": "#ffdea0",
+                "tertiary": "#1b1100",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#aac8f9",
+                "error-container": "#ffdad6",
+                "surface-container": "#eeeeed",
+                "surface-dim": "#dadada",
+                "primary-fixed-dim": "#aac8f9",
+                "on-secondary-fixed": "#001b3f",
+                "on-tertiary": "#ffffff",
+                "on-secondary-container": "#294c85",
+                "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "xl": "64px",
+                "md": "24px",
+                "base": "4px",
+                "gutter": "24px",
+                "xs": "8px",
+                "lg": "40px",
+                "container-max": "1200px",
+                "sm": "16px",
+                "section-gap": "96px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "display-lg-mobile": ["Inter"],
+                "label-lg": ["Inter"],
+                "headline-md": ["Inter"],
+                "headline-lg": ["Inter"],
+                "body-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "display-lg": ["Inter"],
+                "body-md": ["Inter"]
+            },
+            "fontSize": {
+                "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md fixed top-0 w-full h-[72px] border-t-2 border-primary z-50">
+<nav class="flex justify-between items-center h-full px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Prayas Foundation</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-secondary font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-secondary font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<a class="text-secondary font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Programs</a>
+<!-- Dropdown -->
+<div class="relative group">
+<button class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md flex items-center gap-1">
+                        Our Story
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="absolute top-full right-0 mt-4 w-48 bg-surface-container-lowest border border-outline-variant shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+<a class="block px-4 py-3 text-label-md font-label-md text-secondary hover:bg-surface-container-low hover:text-primary transition-colors" href="#success">Success Stories</a>
+<a class="block px-4 py-3 text-label-md font-label-md text-secondary hover:bg-surface-container-low hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="block px-4 py-3 text-label-md font-label-md text-secondary hover:bg-surface-container-low hover:text-primary transition-colors" href="#media">Media &amp; News</a>
+</div>
+</div>
+<a class="text-secondary font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Contact Us</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md font-bold hover:bg-primary-container transition-all active:opacity-80">
+                Donate Now
+            </button>
+</nav>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative py-section-gap overflow-hidden bg-surface-container-low">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<h1 class="font-display-lg text-display-lg text-on-background mb-6">Tracing a Legacy of <span class="text-primary">Quiet Impact</span></h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">Since 2012, Prayas Foundation has prioritized structural change over superficial visibility. Our story is not written in press releases, but in the enduring resilience of the communities we serve.</p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-variant/30 rounded-xl overflow-hidden border border-outline-variant p-4">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A professional high-angle shot of a diverse group of focused intellectuals and leaders collaborating around a light-colored wooden table in a brightly lit, minimalist office. The scene is bathed in natural daylight, emphasizing a clean light-mode aesthetic with teal and slate blue accents. The atmosphere conveys serious purpose, institutional trust, and modern corporate efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6min_R8Nf8qqm9HqH-ARd7LUbNSRUEburF22rLHznGXkOS7mYC-0-4ftSdYoP5zl_U_0eVZr9SPF7WAvusdpR9wKnmu84AsXIHfO7kw588bg3ske5zE05_Gd-MV-JLi1iVebSXcWQ7RgCw4KeRaP5N3mFFBBm1EUbpRm-dv_fJFq-1tUCtbAI2UuRP6cbyP0hxepo8uABoc3CCz1zRqOIyeVOMoGzhIIXoewMNGsum85cfE8z7gKGk8b4SJwSMsAjRtmmTYKXYvVp"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Stories / Testimonials -->
+<section class="py-section-gap bg-surface" id="success">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase mb-4 block">Impact Testimony</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Voices of Resilience</h2>
+</div>
+<div class="flex gap-4 mt-8 md:mt-0">
+<button class="w-12 h-12 rounded-full border border-outline text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="scrollTestimonials(-1)">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="scrollTestimonials(1)">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory gap-gutter pb-8" id="testimonial-container">
+<!-- Testimonial 1 -->
+<div class="min-w-full md:min-w-[700px] snap-center bg-surface-container-lowest border border-outline-variant p-8 md:p-12 flex flex-col md:flex-row gap-8">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-variant overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale" data-alt="A formal black and white headshot of a mature male community leader with a look of quiet confidence and wisdom. The lighting is soft and professional, set against a neutral, minimalist gray background. The aesthetic is sophisticated and grounded in institutional trust, matching a high-end corporate or NGO profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlgQhWGyYUjMrlXRoyUJl2h9ZWV-aparsZs8SdpxpFms2PJURX1LUk4NE9tM2x9Ek62GZVq79y2GPSXdv1Gytl-ihhVSaJ-p1U7w4_6JlsDRUH5RJb0nKWDq5JTKqgqIrBtQ1GO4E0U3ok3YIzVB2DXnPn_julhgjN09Kxq3C6AmspYhKo9rsKAwTOx-n_TbqSGZuGazzC67manFyyfZHu7677SzUGP-DK1Yimsb2cfJBhedAPx04u83E59WFybl3bjFWmdFfJzgv"/>
+</div>
+<div class="flex flex-col">
+<span class="material-symbols-outlined text-primary text-[48px] mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline-md text-headline-md italic text-on-surface-variant mb-6 leading-relaxed">"Prayas Foundation didn't just provide resources; they provided the structural blueprint for our community to lead itself. Their impact is silent, yet foundational."</p>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-background">Dr. Julian Vance</h4>
+<p class="font-label-md text-label-md text-secondary">Director of Urban Development, Metro Hope</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-full md:min-w-[700px] snap-center bg-surface-container-lowest border border-outline-variant p-8 md:p-12 flex flex-col md:flex-row gap-8">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-variant overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale" data-alt="A high-end, professional portrait of a woman in corporate attire, expressing intelligence and composure. The image is desaturated with a subtle teal overlay, maintaining a clean and professional appearance. The background is a blurred modern office setting, emphasizing focus and institutional reliability in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChYCzb-LIk1ace3qHT-78S72rPvpGtzYFJrtJXaezYMYyKkEv0EOJuujX1WN3cJRot-lFPY7x_oJpz1pQcLfhzh6BG45Pa2Tv9w-ysBaJDjpHVJBww1AGh2YQv_dndhWnH_dGOngYNyPR-2A7ZSsOybXhS1VQlkT-D_X5MzF8EXhu6s_5dLRLeEifzlAaBNefEzh40qCDWtWWfor70e2j3FUKFCMtuvX_Jl56WUxpkD3i_1XtfkJaot0B4QixN9oXmsOlxwgcbR4ue"/>
+</div>
+<div class="flex flex-col">
+<span class="material-symbols-outlined text-primary text-[48px] mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline-md text-headline-md italic text-on-surface-variant mb-6 leading-relaxed">"We sought partners who understood the value of long-term stability over short-term visibility. This foundation is the definition of institutional integrity."</p>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-background">Sarah Jenkins</h4>
+<p class="font-label-md text-label-md text-secondary">Executive Partner, Global Sustain</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-full md:min-w-[700px] snap-center bg-surface-container-lowest border border-outline-variant p-8 md:p-12 flex flex-col md:flex-row gap-8">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-variant overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale" data-alt="A minimalist, professional headshot of a young male professional in a sharp navy blazer, looking directly into the camera with a calm and decisive expression. The lighting is crisp and even, suitable for an NGO or high-level corporate board. The desaturated color palette reinforces a sense of trust and focused expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHh5337kQHQdnGlkwToF6GpUQ9ct9l9lMmegk-rAjqQoZOYfQy00UtY9mtX4BvFvG7Pr3RLH8lr9yJ3ZFIHXyNc9CFTlYOloMTM6NGCT5_CfdPUfWpjyt-l07Z9SdZQWNdgGQBPuUEJ8D9_tq6ZpqMqw4o7sn7D7ITkPwqiKnkwYIXgp--7UNTiwuHmUVQ9iVSLnX-oTS1r9zJ3JwPcSb74-JpQfYZe7Gbx5paBuRTMdc_aGF5u7uEn35SveMZDfnNDH4eUiITyiUq"/>
+</div>
+<div class="flex flex-col">
+<span class="material-symbols-outlined text-primary text-[48px] mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline-md text-headline-md italic text-on-surface-variant mb-6 leading-relaxed">"Their approach to data-driven advocacy has redefined success for us. They are truly leading from the front, quietly."</p>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-background">Marcus Thorne</h4>
+<p class="font-label-md text-label-md text-secondary">Head of Research, Civic Insights</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery: Masonry Style -->
+<section class="py-section-gap bg-surface-container-low" id="gallery">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase mb-4 block">Visual Archive</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Work on the Ground</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+<!-- Item 1 -->
+<div class="row-span-2 col-span-2 relative group overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Collaborative leaders summit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB074CvVcMW0p_gPhwN1ARcUo0ErayTHACF9D_3hp4UYeP-36Fh4SflVoSvsG1jVkpNa_hQXBD0mP5TdryjhO6jZQRjDxxQkKM9AWLQLvkhsdb3-uB9vU7CUEmq1bltMnWrdlf73HqLnoGpOG-m5D__iA-AuN3yieYcLRg8xJKH3OKZHN-9T5lY157Uwi4r31EVNe2uwkxEjxRMPu8M5byKyt3yEvEhdMQeimvLosJ7gR9vxqXiO0M6MRK-SkiFzvpZZWiU184fKjdP"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-on-primary font-label-md text-label-md">Annual Strategy Summit, 2023</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative group overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Headquarters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDsUuMgZImMQzM1acTO4FUVe3AqyKl9dhfL_SFC9X0HQCiv5NjVRlDgmzdhfNHZwrTRHVyUZdhE4lajcbaJievKMot0yMgrplj-jyYOlxGbGSE3k25Wvs-2VjHbfz03ygUXIi_WLFNg1HHDCjuu-WqvzRqU2OeEIozglYZMIJ3_bf70eAg_emdZK9NFVdM9RvAUPS2MrJa2_Iuy87PCu_Y7YwK15JltRGZnzVmMxGJA1ftsyQ9W-mIcIaD1-c0O0JtKaVvoQvR-nZ0"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-on-primary font-label-md text-label-md">Headquarters Opening</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="row-span-2 relative group overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Data research" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnxel4mz6jDzMD8DkT_WZXp78jigYwh-Mxmdv2Ho9PQW-RR_xzTeIC1YuetA4bMzLZllz9ekaO_2KKevdwKSnmilIoLrqaYZqwAgksGDMFXNsUtu-uAqIrFDIDZ6MVUSXZlrPuAhfTMuBNNjHGxTjN_aVqgRU1VFwLBokbs0gXBod21EbzmjYOvJ-rbnmpi1_HflAguN3LwaiC2B3EM0MiV1C1pb-KCM-ofiqxgJowF3scU0wMTvoLyhwpZC4Xv9zDGF4Tr_4Bpktq"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-on-primary font-label-md text-label-md">Data Infrastructure Project</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative group overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Community engagement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt_mBwneoZhssFvI0u7FJFVVb0S1_TdsPohKbqDp9ptw0LZhpZHvtXuNiF0_AQhxzyYCBVk8Nowzrwa5sLSNGe7K6S844y9K5wJgqDX4gQ7mE8A0YeaD1dnDPQIp7p_nRE1Kb71YiZTZzb13j-Z9-KEmveRSZ1akEe-AQH54QcBs29F8UbmlyNfeKW3HbprEG_unow2HH9SX9SYvjEwo1ehBslQEz105CEMmi_YEbYCsd5iWPHw5kIKpkKOQ076DsTMnJXa47YUK8K"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-on-primary font-label-md text-label-md">Community Forum</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="col-span-1 relative group overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Research hub" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5AenTD24WgFdLz1lJAPcjp7hb9fdMqFHDYnfh4vD03fxSS2_S0KENSJyvJhoTo6GIWy4FrrwqHsryGzYyMzOza4F9FivQC0BtXbBqut7NVfIFudXc_813Qv8HwBTAiX_LfHMoz3KEewC0iGnuMW4npS_7bvJpEoZWwbx9rJDohho20RKgzRtf19dPYS7Fe2LDh7-QiQyCxMPgw6iS5uSqwaCg7cQtQHP7FN5lDD1DMOVWkOjHjxeTvwDE9flQgN7UK6CMYNc_nhmt"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="text-on-primary font-label-md text-label-md">Research Hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Media and News -->
+<section class="py-section-gap bg-surface" id="media">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+<div>
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase mb-4 block">Institutional Updates</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Press &amp; Insights</h2>
+</div>
+<a class="text-primary font-label-md text-label-md font-bold flex items-center gap-2 group" href="#">
+                        Browse all updates
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- News Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant group hover:border-primary transition-colors duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Strategy reports" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzZKnVhbzYBwRm_amfqVMDLcAnFmg1GLcRLlzo0nrjn2x_oESkzTAvTMDrNvozna9wtUzuq75WzRPIyuT2nwDb3dyr4dhLZr9vmGbHurYcAHhXcDrnI1mtvPc5Qu9yh39B4cbVr9Hax7nf8uKUUnko-SuERn4Y0mwo_k-tucNxKMLBb-LbAojOyNMg2m4JFNiuOarY51-z5W4ydECK_3QBYUq1pX1JAdeYpDnNF2qfAaRFkiX1hit8khVGZwFntRu3fW2WCaRu-_Hh"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 font-label-md text-label-md uppercase tracking-wider">Reports</span>
+<time class="text-secondary font-label-md text-label-md">October 14, 2023</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-primary transition-colors">The 2024 Strategic Integrity Framework Released</h3>
+<p class="text-secondary font-body-md text-body-md line-clamp-3 mb-6">Our latest publication outlines the fundamental pillars of Prayas Foundation and how to implement them effectively.</p>
+<button class="text-primary font-label-md text-label-md font-bold flex items-center gap-1 group/btn">
+                                Read Press Release
+                                <span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- News Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant group hover:border-primary transition-colors duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Expansion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCITJ9gtI0J3UDHpF3NtLXloAdEr5URn7Gb50VZa8nDAEkdNGuY7Fcbj6_SYii4h6Ve9pRuYjGRUst3tpEMz-ywZbWZd7IeqrEGuRY_oJwLuTzkdKQs7DJc_5VXY9fLov54M3pqhww8_2q8fIA0LKcJ1EdmI4hZ3mcd8KZxXDk-ZR8Hsc4aIgi76BtNiMZVOIEZgEYqX0pYP_OPk85t-lrLGmfKWdQzQ_9-kJKP7tn2UMCcDLZuW-Q5-8cJ6uRLrBmVft0lRHR6dBPU"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 font-label-md text-label-md uppercase tracking-wider">Partnership</span>
+<time class="text-secondary font-label-md text-label-md">September 28, 2023</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-primary transition-colors">Expanding our Reach into Rural Data Analytics</h3>
+<p class="text-secondary font-body-md text-body-md line-clamp-3 mb-6">Joining forces with global analytics providers to bring institutional-grade data to underserved local municipalities.</p>
+<button class="text-primary font-label-md text-label-md font-bold flex items-center gap-1 group/btn">
+                                Read Press Release
+                                <span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- News Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant group hover:border-primary transition-colors duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Summit takeaways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsN4a9CLT5N7XxTK5XDdDQ3uu5xaBPjKsgD64QjQVjpNgtnasUditxyFMYgYcnCajZEZ8fqDX5t5vdMyircXd2VQP2GojyHtsWVVTAsUgtYda26f1PxLnJZ_UlgOoBIC4yM-TE0cKH5OhsxBiyGuJBv1xLW662KJZWcvTr1HpisU5-LLQccqA37pWBNG6gT1li5P06oo8gz_T86RMaW9AfNiKhnb5IhGC0Zfl0_pVCaXED6AwTeSMI04J8dNSYpeUOx3srBy108AUF"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 font-label-md text-label-md uppercase tracking-wider">Announcement</span>
+<time class="text-secondary font-label-md text-label-md">August 05, 2023</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-primary transition-colors">Institutional Excellence Summit: Key Takeaways</h3>
+<p class="text-secondary font-body-md text-body-md line-clamp-3 mb-6">A summary of the core findings from our annual gathering of international leaders and experts.</p>
+<button class="text-primary font-label-md text-label-md font-bold flex items-center gap-1 group/btn">
+                                Read Press Release
+                                <span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">chevron_right</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md font-black text-surface-container-lowest mb-8">Prayas Foundation</div>
+<p class="text-surface-variant opacity-80 font-body-md text-body-md max-w-xs">
+                    Committed to the silent progress that moves the world forward. Institutional excellence, delivered with purpose.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Navigation</h4>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Home</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">About Us</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Programs</a>
+<a class="text-surface-container-lowest font-bold underline font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Our Story</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Involved</h4>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Careers</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Privacy Policy</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Partner with Us</a>
+<a class="text-surface-variant opacity-80 font-label-md text-label-md hover:text-primary-fixed transition-all hover:translate-x-1 duration-200" href="#">Donor Reports</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Contact</h4>
+<div class="text-surface-variant opacity-80 font-label-md text-label-md">
+                    Prayas Institutional Row,<br/>
+                    Suite 500, Washington D.C.<br/>
+                    United States
+                </div>
+<div class="text-surface-variant opacity-80 font-label-md text-label-md mt-4">
+                    contact@prayasfoundation.org<br/>
+                    +1 (202) 555-0198
+                </div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-16 pt-8 border-t border-surface-variant/20">
+<p class="text-surface-variant opacity-60 font-label-md text-label-md">
+                © 2024 Prayas Foundation. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        function scrollTestimonials(direction) {
+            const container = document.getElementById('testimonial-container');
+            const scrollAmount = container.clientWidth;
+            container.scrollBy({
+                left: scrollAmount * direction,
+                behavior: 'smooth'
+            });
+        }
+
+        // Atmosphere effect
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            const heroImage = document.querySelector('section img');
+            if(heroImage) {
+                heroImage.style.transform = `translate(${x * 5}px, ${y * 5}px)`;
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('article, #testimonial-container > div, #gallery > div > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

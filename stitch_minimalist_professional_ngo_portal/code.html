@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prayas Foundation | Empowering Communities Through Skill Development</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#abc7ff",
+                    "secondary-container": "#9ebfff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e3e2e2",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#3c5e98",
+                    "on-primary-container": "#7390be",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#002850",
+                    "tertiary": "#1b1100",
+                    "primary-fixed": "#d5e3ff",
+                    "tertiary-fixed-dim": "#f8bd2d",
+                    "inverse-on-surface": "#f1f0f0",
+                    "on-primary-fixed-variant": "#294871",
+                    "inverse-surface": "#2f3131",
+                    "secondary-fixed": "#d7e2ff",
+                    "on-tertiary-container": "#b68700",
+                    "tertiary-container": "#352500",
+                    "on-background": "#1a1c1c",
+                    "surface-container-low": "#f4f3f3",
+                    "outline": "#74777f",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c3c6d0",
+                    "surface-container-high": "#e8e8e8",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#001b3f",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e3e2e2",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary-fixed-dim": "#aac8f9",
+                    "on-secondary-fixed-variant": "#21467f",
+                    "inverse-primary": "#aac8f9",
+                    "surface-dim": "#dadada",
+                    "primary": "#00132c",
+                    "background": "#faf9f9",
+                    "surface-container": "#eeeeed",
+                    "surface": "#faf9f9",
+                    "surface-tint": "#425f8a",
+                    "tertiary-fixed": "#ffdea0",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-secondary-container": "#294c85",
+                    "surface-bright": "#faf9f9",
+                    "on-primary-fixed": "#001c3b",
+                    "on-surface": "#1a1c1c",
+                    "on-surface-variant": "#43474e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "xl": "64px",
+                    "xs": "8px",
+                    "container-max": "1200px",
+                    "lg": "40px",
+                    "section-gap": "96px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display": ["Inter"],
+                    "display-mobile": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .partner-logo {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        .partner-logo:hover {
+            filter: grayscale(0%);
+        }
+        .bento-card {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full h-[72px] border-t-2 border-secondary bg-surface/90 backdrop-blur-md z-50">
+<div class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary tracking-tight" href="#">Prayas Foundation</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#hero">Home</a>
+<a class="text-on-surface-variant font-medium font-label-lg text-label-lg hover:text-secondary transition-colors duration-200" href="#about">About Us</a>
+<a class="text-on-surface-variant font-medium font-label-lg text-label-lg hover:text-secondary transition-colors duration-200" href="#impact">Programs</a>
+<a class="text-on-surface-variant font-medium font-label-lg text-label-lg hover:text-secondary transition-colors duration-200" href="#story">Our Story</a>
+<a class="text-on-surface-variant font-medium font-label-lg text-label-lg hover:text-secondary transition-colors duration-200" href="#contact">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-DEFAULT font-label-lg text-label-lg hover:opacity-80 transition-opacity uppercase tracking-wider font-bold">
+                    Donate Now
+                </button>
+<button class="md:hidden text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-24 md:py-32" id="hero">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="z-10 order-2 lg:order-1">
+<span class="inline-block py-1 px-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-lg mb-6 tracking-widest uppercase">Empowering Futures</span>
+<h1 class="font-display text-display-mobile md:text-display text-on-background mb-6 max-w-xl">
+                        Empowering Communities. Building Skills. Transforming Lives.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Bridging the gap between opportunity and aspiration for youth, women, and underserved communities.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-secondary text-on-secondary px-8 py-3 rounded-DEFAULT font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors inline-block" href="programs.html">
+                            Discover Our Impact
+                        </a>
+<button class="border border-outline text-secondary px-8 py-3 rounded-DEFAULT font-label-lg text-label-lg font-bold hover:bg-surface-container transition-colors">
+                            View Programs
+                        </button>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="aspect-[4/3] rounded-xl overflow-hidden border border-outline-variant bg-surface-container-highest">
+<img alt="Prayas Foundation Skill Development Center" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzG8WE6iQDOfVT-ImbdbZFJ8sJCrhDBwahKaQ1pxVeZTGSr1lOU3-1wh-GEMX1Gz7BpTMbd-C_hhlKrsb1fvIYH_h9hCsnUgX0o7JyxGT81S_UDo88dgGXNEfd1dgRCewz92ltDXvidVdMpgyP6MN_9Cvk0ELoda2Y1Qe6QRfby5vhlliCwk9GuNZRL3u4hPB2hX-6Vey_k8wS9GMB_fGCKKwjKqzSHu-ah8HXxr_2N7GGkGy4T4254ndtz6oHYNlPrRYl4_WjmEmJ"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Our Impact Section (Bento Grid) -->
+<section class="py-section-gap bg-surface-container-low border-y border-outline-variant/30" id="impact">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Our Institutional Impact</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Measurable change through sustained commitment and strategic community partnerships.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<!-- Metric Card 1: Education -->
+<div class="bento-card md:col-span-2 bg-surface-container-lowest p-8 border border-outline-variant flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1">school</span>
+<span class="text-secondary font-bold text-headline-lg">15,000+</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Education &amp; Literacy</h3>
+<p class="font-body-md text-on-surface-variant max-w-md">Quality elementary education and adult literacy programs reaching the heart of rural communities.</p>
+</div>
+</div>
+<!-- Metric Card 2: Skill Development -->
+<div class="bento-card bg-secondary p-8 text-on-secondary flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-on-secondary text-4xl" style="font-variation-settings: 'FILL' 1">engineering</span>
+<span class="text-on-secondary font-bold text-headline-lg">250+</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Skill Training</h3>
+<p class="font-body-md text-on-secondary/80">Vocational training centers equipped with modern labs for industrial and digital skills.</p>
+</div>
+</div>
+<!-- Metric Card 3: Livelihood -->
+<div class="bento-card bg-tertiary-fixed text-on-tertiary-fixed p-8 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-4xl" style="font-variation-settings: 'FILL' 1">payments</span>
+<span class="text-on-tertiary-fixed font-bold text-headline-lg">8,500</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Livelihoods</h3>
+<p class="font-body-md text-on-tertiary-fixed-variant/80">Successful placements and micro-entrepreneurship support for youth and self-help groups.</p>
+</div>
+</div>
+<!-- Metric Card 4: Community Growth -->
+<div class="bento-card md:col-span-2 bg-surface-container-lowest p-8 border border-outline-variant flex flex-col justify-between md:flex-row md:items-end gap-6 overflow-hidden relative">
+<div class="z-10">
+<h3 class="font-headline-md text-headline-md mb-2">Community Resilience</h3>
+<p class="font-body-md text-on-surface-variant max-w-sm">Driving sustainable development goals through grassroots initiatives and localized empowerment models across 12 states.</p>
+</div>
+<div class="flex-shrink-0 z-10">
+<button class="flex items-center gap-2 text-secondary font-bold font-label-lg">
+                                EXPLORE DATA <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Subtle Pattern -->
+<div class="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'opsz' 48;">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners Section -->
+<section class="py-section-gap bg-surface" id="partners">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.3em] mb-12">Partners &amp; Associations</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
+<div class="partner-logo flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-5xl text-outline">verified</span>
+<span class="font-label-lg text-on-surface-variant font-bold uppercase tracking-widest">Skill India Mission</span>
+</div>
+<div class="partner-logo flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-5xl text-outline">architecture</span>
+<span class="font-label-lg text-on-surface-variant font-bold uppercase tracking-widest">PM Vishwakarma</span>
+</div>
+<div class="partner-logo flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-5xl text-outline">rocket_launch</span>
+<span class="font-label-lg text-on-surface-variant font-bold uppercase tracking-widest">PMKVY</span>
+</div>
+<div class="partner-logo flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-5xl text-outline">account_balance</span>
+<span class="font-label-lg text-on-surface-variant font-bold uppercase tracking-widest">State Skill Missions</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-primary text-on-primary rounded-xl p-12 md:p-20 relative overflow-hidden">
+<div class="max-w-2xl relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-6">Stay informed about our community initiatives.</h2>
+<p class="font-body-md text-on-primary/80 mb-10">Join our mailing list to receive updates on new skill centers, impact stories, and opportunities to partner with Prayas Foundation.</p>
+<form class="flex flex-col sm:flex-row gap-4" onsubmit="event.preventDefault(); alert('Thank you for subscribing.');">
+<input class="bg-white/10 border border-white/20 text-white px-6 py-4 rounded-DEFAULT w-full focus:ring-2 focus:ring-secondary-fixed focus:border-transparent placeholder:text-white/50" placeholder="Email Address" type="email"/>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-DEFAULT font-bold uppercase tracking-wider hover:opacity-90 transition-opacity whitespace-nowrap" type="submit">Subscribe</button>
+</form>
+</div>
+<!-- Atmospheric Background Element -->
+<div class="absolute -right-20 -bottom-20 opacity-10">
+<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'opsz' 48;">volunteer_activism</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-inverse-surface text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-black text-surface-container-lowest mb-6">Prayas Foundation</div>
+<p class="text-surface-variant opacity-80 font-body-md mb-8">Building bridges between aspiration and opportunity through dedicated skill development and community support.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:text-secondary-fixed-dim transition-colors cursor-pointer">public</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed-dim transition-colors cursor-pointer">campaign</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed-dim transition-colors cursor-pointer">diversity_1</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-surface-container-lowest mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#hero">Home</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#about">About Us</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#impact">Programs</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#story">Our Story</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-surface-container-lowest mb-6">Programs</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#">Vocational Training</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#">Digital Literacy</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#">Women Empowerment</a></li>
+<li><a class="text-surface-variant font-body-md hover:text-secondary-fixed-dim hover:translate-x-1 transition-all duration-200 inline-block" href="#">Rural Education</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-surface-container-lowest mb-6">Contact</h4>
+<p class="text-surface-variant opacity-80 font-body-md mb-2">1200 Development Block, Suite 400</p>
+<p class="text-surface-variant opacity-80 font-body-md mb-6">New Delhi, DL 110001</p>
+<p class="text-secondary-fixed-dim font-bold font-body-md">contact@prayasfoundation.org</p>
+<p class="text-surface-variant opacity-80 font-body-md">+91 (11) 4555-0199</p>
+</div>
+</div>
+<div class="mt-section-gap pt-8 border-t border-white/10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-sm font-label-sm text-surface-variant opacity-60">© 2024 Prayas Foundation. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-label-sm font-label-sm text-surface-variant opacity-60 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-surface-variant opacity-60 hover:text-white transition-colors" href="#">Terms of Use</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal effect for bento cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(20px)";
+            card.style.transition = "all 0.6s cubic-bezier(0.4, 0, 0.2, 1)";
+            observer.observe(card);
+        });
+
+        // Sticky header background shift on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+                header.classList.remove('bg-surface/90');
+                header.classList.add('bg-surface');
+            } else {
+                header.classList.remove('shadow-sm');
+                header.classList.add('bg-surface/90');
+                header.classList.remove('bg-surface');
+            }
+        });
+    </script>
+</body></html>

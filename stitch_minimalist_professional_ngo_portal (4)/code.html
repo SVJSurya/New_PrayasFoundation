@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Careers | Prayas Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c3c6d0",
+                    "on-surface": "#1a1c1c",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#9ebfff",
+                    "on-error": "#ffffff",
+                    "background": "#faf9f9",
+                    "inverse-on-surface": "#f1f0f0",
+                    "on-primary-fixed-variant": "#294871",
+                    "on-tertiary-container": "#b68700",
+                    "on-secondary-fixed-variant": "#21467f",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-container-highest": "#e3e2e2",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf9f9",
+                    "primary": "#00132c",
+                    "secondary": "#3c5e98",
+                    "on-surface-variant": "#43474e",
+                    "surface-container-low": "#f4f3f3",
+                    "on-primary-container": "#7390be",
+                    "secondary-fixed-dim": "#abc7ff",
+                    "outline": "#74777f",
+                    "tertiary-container": "#352500",
+                    "surface-tint": "#425f8a",
+                    "tertiary-fixed-dim": "#f8bd2d",
+                    "secondary-fixed": "#d7e2ff",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#002850",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-container-high": "#e8e8e8",
+                    "inverse-surface": "#2f3131",
+                    "surface-variant": "#e3e2e2",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#faf9f9",
+                    "on-primary-fixed": "#001c3b",
+                    "tertiary-fixed": "#ffdea0",
+                    "tertiary": "#1b1100",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#aac8f9",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#eeeeed",
+                    "surface-dim": "#dadada",
+                    "primary-fixed-dim": "#aac8f9",
+                    "on-secondary-fixed": "#001b3f",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#294c85",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xl": "64px",
+                    "md": "24px",
+                    "base": "4px",
+                    "gutter": "24px",
+                    "xs": "8px",
+                    "lg": "40px",
+                    "container-max": "1200px",
+                    "sm": "16px",
+                    "section-gap": "96px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,19,44,0.05) 0%, rgba(250,249,249,1) 100%);
+        }
+        .career-card:hover .career-icon {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full h-[72px] border-t-2 border-primary bg-surface/90 backdrop-blur-md z-50">
+<div class="flex justify-between items-center h-full px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Prayas Foundation</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-secondary font-medium hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary font-medium hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<a class="font-label-md text-label-md text-secondary font-medium hover:text-primary transition-colors duration-200" href="#">Programs</a>
+<a class="font-label-md text-label-md text-secondary font-medium hover:text-primary transition-colors duration-200" href="#">Our Story</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1 active:opacity-80 transition-opacity" href="#contact">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-primary-container transition-colors duration-200">Donate Now</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="hero-gradient py-section-gap px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div>
+<h1 class="font-display-lg text-display-lg text-on-background mb-6">Connect With <br/>Our Mission</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-8 max-w-xl">Whether you're looking to join our global team of professionals or simply wish to learn more about our leadership initiatives, we're here to start the conversation.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-primary-container transition-all" href="#contact">Send a Message</a>
+<a class="border border-secondary text-secondary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-surface-container transition-all" href="#careers">View Openings</a>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-video shadow-lg">
+<img alt="Institutional Excellence Office" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC90f_yfvWttJgz8D0Iuki0RaY0zyga4wUNE2EKUTSGIhUmVgIMMu5swtsqc3QkjqrcTCjUtH3PGQ_n7QWJFP4hLI2OLIDGwQoJCg7QqMNAPL5BC-otszLDheu90lfMinecKT0Qyl8aphMxYVk46A6w3aRNQigJZRTEZonRkMyiilr7U8awywM5zDuBBeo8KaeHLyiw8PJ6q4x1jrEz2UPdbKezL-hvSVrlZxAXOdBX93afbzj6xIwQd5Fj0lusjGHeawVk1KS4wlIm"/>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-desktop bg-surface-container-lowest" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Side -->
+<div class="lg:col-span-7 bg-white p-8 md:p-12 border border-outline-variant rounded-lg">
+<h2 class="font-headline-lg text-headline-lg mb-8 text-primary">Send an Inquiry</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface-variant mb-2">Full Name</label>
+<input class="w-full px-4 py-3 border border-outline rounded-DEFAULT focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-secondary/40" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface-variant mb-2">Email Address</label>
+<input class="w-full px-4 py-3 border border-outline rounded-DEFAULT focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-secondary/40" placeholder="jane@organization.org" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface-variant mb-2">Subject</label>
+<select class="w-full px-4 py-3 border border-outline rounded-DEFAULT focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all appearance-none bg-white">
+<option>General Inquiry</option>
+<option>Program Partnership</option>
+<option>Media &amp; Press</option>
+<option>Donation Support</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface-variant mb-2">Your Message</label>
+<textarea class="w-full px-4 py-3 border border-outline rounded-DEFAULT focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-secondary/40" placeholder="How can we assist you today?" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-DEFAULT font-label-md hover:bg-primary-container transition-colors shadow-sm" type="submit">Send Message</button>
+</form>
+</div>
+<!-- Info Side -->
+<div class="lg:col-span-5 space-y-gutter">
+<div class="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+<h3 class="font-headline-md text-headline-md mb-6 text-primary">Headquarters</h3>
+<div class="space-y-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-secondary">7th Floor, Prayas Bhavan<br/>New Delhi, India 110001</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="text-secondary">+91 11 2345 6789</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p class="text-secondary">info@prayasfoundation.org</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg overflow-hidden h-64 border border-outline-variant relative">
+<div class="absolute inset-0 bg-surface-dim flex items-center justify-center">
+<img alt="Map Location" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuKT384zzTyLCtYYNcBwy0izzOs9TDfSFH-EIZMqN7DrkBx02jKDuFZAtb7I74M6fAD6oxmCshUqG1K8-IOXjLjqr2BQrbp1VgiUsSEBOYV0CP7bmgitq7_NKuZSQuYT585xXJuRtw9Zo58I4XPe9iZQcXHVug3-4bAs5gRU6Q_tahBCAOAeNGwvfRUTvsXE98qEbUMSAc7UKndOjsxgvV6uD0c_RXERCFj2EIvVS1ouyIejlh5PY_i3L5BT44gZvOn-xTIxXaL-dQ"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary mb-2 shadow-lg ring-4 ring-white/20">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<span class="bg-white px-3 py-1 rounded-full text-label-md font-bold shadow-sm">Visit Us in Delhi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Careers Section -->
+<section class="py-section-gap px-margin-desktop" id="careers">
+<div class="max-w-container-max mx-auto">
+<div class="mb-12 text-center max-w-2xl mx-auto">
+<span class="text-tertiary-fixed-dim bg-tertiary-container px-3 py-1 rounded-full font-bold tracking-widest text-label-md uppercase">Join Our Team</span>
+<h2 class="font-display-lg text-display-lg text-on-background mt-4 mb-4">Empowering Institutional Leadership</h2>
+<p class="text-secondary text-body-lg">We are looking for individuals who lead with empathy, precision, and purpose. Explore our current global opportunities.</p>
+</div>
+<div class="space-y-4 max-w-4xl mx-auto">
+<!-- Career Item 1 -->
+<div class="career-card group bg-white border border-outline-variant rounded-lg overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('career-1')">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">strategy</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md group-hover:text-primary transition-colors">Senior Program Manager</h4>
+<span class="text-label-md text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-1 rounded">Full-Time · New Delhi, IN</span>
+</div>
+</div>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-career-1">expand_more</span>
+</button>
+<div class="hidden px-24 pb-8 pr-8" id="content-career-1">
+<div class="pt-2 text-secondary space-y-4">
+<p>Lead the strategic execution of our 'Global Ethics' initiative. You will oversee multi-national teams and ensure operational excellence across all program pillars.</p>
+<ul class="list-disc pl-5 space-y-1 text-body-md">
+<li>8+ years in NGO management</li>
+<li>Proven track record of large-scale program delivery</li>
+<li>Strong ethical framework and collaborative mindset</li>
+</ul>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-primary-container transition-all">Apply for this Position</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Career Item 2 -->
+<div class="career-card group bg-white border border-outline-variant rounded-lg overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('career-2')">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md group-hover:text-primary transition-colors">Regional Coordinator</h4>
+<span class="text-label-md text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-1 rounded">Contract · Mumbai, IN</span>
+</div>
+</div>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-career-2">expand_more</span>
+</button>
+<div class="hidden px-24 pb-8 pr-8" id="content-career-2">
+<div class="pt-2 text-secondary space-y-4">
+<p>Coordinate on-the-ground operations for our Western India leadership workshops. Requires strong local networking and logistical expertise.</p>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-primary-container transition-all">Apply for this Position</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Career Item 3 -->
+<div class="career-card group bg-white border border-outline-variant rounded-lg overflow-hidden transition-all duration-300">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('career-3')">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md group-hover:text-primary transition-colors">Communications Lead</h4>
+<span class="text-label-md text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-1 rounded">Full-Time · Remote</span>
+</div>
+</div>
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-career-3">expand_more</span>
+</button>
+<div class="hidden px-24 pb-8 pr-8" id="content-career-3">
+<div class="pt-2 text-secondary space-y-4">
+<p>Develop and execute our global narrative strategy. We need a storyteller who understands the nuance of the Prayas Foundation brand.</p>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-DEFAULT font-label-md hover:bg-primary-container transition-all">Apply for this Position</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md font-bold text-surface-container-lowest">Prayas Foundation</div>
+<p class="text-surface-variant opacity-80 text-body-md pr-4">Upholding the standards of institutional excellence and transformative leadership through precision and integrity.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-lg text-headline-lg text-surface-container-lowest mb-2">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#">Home</a></li>
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#">About Us</a></li>
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#">Programs</a></li>
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#">Our Story</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-lg text-headline-lg text-surface-container-lowest mb-2">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-tertiary-fixed-dim font-bold underline font-label-md block" href="#careers">Careers</a></li>
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#contact">Contact Us</a></li>
+<li><a class="text-surface-variant opacity-80 font-label-md hover:text-tertiary-fixed-dim transition-colors block" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-lg text-headline-lg text-surface-container-lowest mb-2">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-tertiary-fixed-dim hover:border-tertiary-fixed-dim transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-tertiary-fixed-dim hover:border-tertiary-fixed-dim transition-all" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-section-gap border-t border-surface-variant/10 pt-8 px-margin-desktop max-w-container-max mx-auto">
+<p class="text-surface-variant opacity-60 text-label-md text-center">© 2024 Prayas Foundation. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        function toggleAccordion(id) {
+            const content = document.getElementById('content-' + id);
+            const icon = document.getElementById('icon-' + id);
+            
+            const isOpen = !content.classList.contains('hidden');
+
+            if (isOpen) {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Form Submission micro-interaction
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerText = 'Message Sent Successfully';
+                btn.style.backgroundColor = '#10b981'; // Success Green
+                e.target.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = ''; // Back to tailwind primary
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body></html>
