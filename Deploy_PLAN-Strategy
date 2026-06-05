@@ -1,0 +1,514 @@
+# Prayas Foundation Deployment Runbook (VS Code → Hostinger Premium)
+
+## Project Structure
+
+```text
+PRAYAS-FOUNDATION
+│
+├── prayas-foundation
+│   ├── src
+│   ├── public
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── ...
+│
+└── stitch_minimalist_*
+```
+
+The actual application is:
+
+```text
+prayas-foundation/
+```
+
+---
+
+# STEP 1 — Open Project
+
+Open VS Code
+
+```text
+File
+ └── Open Folder
+      └── PRAYAS-FOUNDATION
+```
+
+Open terminal:
+
+```bash
+Ctrl + `
+```
+
+---
+
+# STEP 2 — Navigate To Application
+
+```bash
+cd prayas-foundation
+```
+
+Verify:
+
+```bash
+dir
+```
+
+Expected files:
+
+```text
+package.json
+vite.config.ts
+src
+public
+```
+
+---
+
+# STEP 3 — Install Dependencies
+
+```bash
+npm install
+```
+
+Expected:
+
+```text
+added xxx packages
+found 0 vulnerabilities
+```
+
+---
+
+# STEP 4 — Run Local Website
+
+```bash
+npm run dev
+```
+
+Expected:
+
+```text
+Local: http://localhost:5173
+```
+
+Open browser:
+
+```text
+http://localhost:5173
+```
+
+Verify:
+
+* Home Page
+* About
+* Programs
+* Projects
+* Impact
+* Donate
+* Volunteer
+* Gallery
+* Contact
+
+Stop server:
+
+```bash
+CTRL + C
+```
+
+---
+
+# STEP 5 — Verify Vite Config
+
+Open:
+
+```text
+prayas-foundation/vite.config.ts
+```
+
+Ensure:
+
+```ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+});
+```
+
+OR
+
+```ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  base: "/",
+  plugins: [react()],
+});
+```
+
+DO NOT USE:
+
+```ts
+base: "/prayas-foundation/";
+```
+
+---
+
+# STEP 6 — Create React Router Rewrite File
+
+Create file:
+
+```text
+public/.htaccess
+```
+
+Inside:
+
+```apache
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^index\.html$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /index.html [L]
+```
+
+Save.
+
+---
+
+# STEP 7 — Create Production Build
+
+Terminal:
+
+```bash
+npm run build
+```
+
+Expected:
+
+```text
+dist/
+```
+
+created.
+
+---
+
+# STEP 8 — Verify Build
+
+Run:
+
+```bash
+npm run preview
+```
+
+Expected:
+
+```text
+http://localhost:4173
+```
+
+Test:
+
+```text
+/
+about
+programs
+projects
+impact
+donate
+volunteer
+gallery
+contact
+```
+
+Everything should work.
+
+Stop:
+
+```bash
+CTRL + C
+```
+
+---
+
+# STEP 9 — Open Build Folder
+
+Open:
+
+```text
+prayas-foundation/dist
+```
+
+Expected:
+
+```text
+dist
+│
+├── assets
+├── index.html
+├── favicon.ico
+└── ...
+```
+
+---
+
+# STEP 10 — Create ZIP
+
+Zip CONTENTS of:
+
+```text
+dist
+```
+
+Create:
+
+```text
+prayas-foundation-dist.zip
+```
+
+---
+
+# STEP 11 — Login To Hostinger
+
+Open:
+
+```text
+https://hpanel.hostinger.com
+```
+
+Login.
+
+---
+
+# STEP 12 — Open Website
+
+Navigate:
+
+```text
+Websites
+ └── Manage
+```
+
+Select:
+
+```text
+Prayas Foundation Domain
+```
+
+---
+
+# STEP 13 — Open File Manager
+
+Navigate:
+
+```text
+Files
+ └── File Manager
+```
+
+Open:
+
+```text
+public_html
+```
+
+---
+
+# STEP 14 — Remove Default Files
+
+Delete:
+
+```text
+default.php
+index.php
+default.html
+```
+
+Anything created by default.
+
+---
+
+# STEP 15 — Upload ZIP
+
+Upload:
+
+```text
+prayas-foundation-dist.zip
+```
+
+to:
+
+```text
+public_html
+```
+
+---
+
+# STEP 16 — Extract ZIP
+
+Right Click ZIP
+
+```text
+Extract
+```
+
+Result:
+
+```text
+public_html
+│
+├── assets
+├── index.html
+├── .htaccess
+└── ...
+```
+
+IMPORTANT
+
+Correct:
+
+```text
+public_html/index.html
+```
+
+Wrong:
+
+```text
+public_html/dist/index.html
+```
+
+If "dist" folder appears:
+
+Move contents up one level.
+
+---
+
+# STEP 17 — Enable SSL
+
+Navigate:
+
+```text
+Security
+ └── SSL
+```
+
+Enable SSL.
+
+Wait until:
+
+```text
+Active
+```
+
+appears.
+
+---
+
+# STEP 18 — Open Live Website
+
+Visit:
+
+```text
+https://yourdomain.com
+```
+
+Verify:
+
+```text
+Home
+About
+Programs
+Projects
+Impact
+Donate
+Volunteer
+Gallery
+Contact
+```
+
+---
+
+# STEP 19 — Verify Routing
+
+Directly open:
+
+```text
+https://yourdomain.com/about
+```
+
+Refresh page.
+
+Should load.
+
+Repeat:
+
+```text
+https://yourdomain.com/programs
+https://yourdomain.com/projects
+https://yourdomain.com/contact
+https://yourdomain.com/donate
+```
+
+All should load without 404.
+
+---
+
+# STEP 20 — Future Updates
+
+Whenever code changes:
+
+```bash
+cd prayas-foundation
+
+npm run build
+```
+
+Upload new:
+
+```text
+dist/*
+```
+
+to:
+
+```text
+public_html
+```
+
+Replace existing files.
+
+Website updates instantly.
+
+---
+
+# One Command Summary
+
+```bash
+cd prayas-foundation
+npm install
+npm run dev
+npm run build
+npm run preview
+```
+
+Deploy generated:
+
+```text
+prayas-foundation/dist/*
+```
+
+into:
+
+```text
+Hostinger/public_html
+```
+
+Done.
